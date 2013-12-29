@@ -1,6 +1,6 @@
 package data;
 
-import pojos.Chamada;
+import models.Chamada;
 
 import com.db4o.ObjectSet;
 

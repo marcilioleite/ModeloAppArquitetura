@@ -30,15 +30,18 @@ public class DatabaseAdapterImpl<T> implements DatabaseAdapter<T> {
 	}
 	
 	public void commit() {
-		db.commit();
+		db.getDatabase().commit();
 	}
 	
 	public void rollback() {
-		db.rollBack();
+		db.getDatabase().rollback();
 	}
 	
 	public void close() {
-		db.close();
+		if (db.getDatabase() != null) {
+			db.getDatabase().close();
+		}
+		db.getDatabase().close();
 	}
 	
 }

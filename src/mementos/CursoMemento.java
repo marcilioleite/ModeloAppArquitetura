@@ -1,6 +1,6 @@
 package mementos;
 
-import pojos.Curso;
+import models.Curso;
 
 public class CursoMemento implements Memento {
 

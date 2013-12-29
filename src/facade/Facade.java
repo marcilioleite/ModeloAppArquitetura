@@ -1,8 +1,8 @@
 package facade;
 
-import pojos.Chamada;
-import pojos.Curso;
-import pojos.Turma;
+import models.Chamada;
+import models.Curso;
+import models.Turma;
 
 import com.db4o.ObjectSet;
 

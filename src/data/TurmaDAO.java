@@ -1,6 +1,6 @@
 package data;
 
-import pojos.Turma;
+import models.Turma;
 
 import com.db4o.ObjectSet;
 

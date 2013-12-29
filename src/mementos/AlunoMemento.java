@@ -1,8 +1,8 @@
 package mementos;
 
-import org.joda.time.LocalDate;
+import models.Aluno;
 
-import pojos.Aluno;
+import org.joda.time.LocalDate;
 
 public class AlunoMemento implements Memento {
 	

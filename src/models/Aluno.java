@@ -1,4 +1,4 @@
-package pojos;
+package models;
 import org.joda.time.LocalDate;
 
 public class Aluno {

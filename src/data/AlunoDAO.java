@@ -1,8 +1,8 @@
 package data;
 
-import com.db4o.ObjectSet;
+import models.Aluno;
 
-import pojos.Aluno;
+import com.db4o.ObjectSet;
 
 public class AlunoDAO extends DatabaseAdapterImpl<Aluno> implements DAO<Aluno> {
 

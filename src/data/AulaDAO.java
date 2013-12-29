@@ -1,6 +1,6 @@
 package data;
 
-import pojos.Aula;
+import models.Aula;
 
 import com.db4o.ObjectSet;
 

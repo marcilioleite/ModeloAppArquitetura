@@ -1,12 +1,13 @@
 package mementos;
 
+import java.util.ArrayList;
 import java.util.List;
 
-import org.joda.time.LocalTime;
+import models.Aula;
+import models.Chamada;
+import models.Turma;
 
-import pojos.Aula;
-import pojos.Chamada;
-import pojos.Turma;
+import org.joda.time.LocalTime;
 
 public class AulaMemento implements Memento {
 
@@ -28,7 +29,7 @@ public class AulaMemento implements Memento {
 		inicio = a.getInicio();
 		fim = a.getFim();
 		diaSemana = a.getDiaSemana();
-		chamadas = a.getChamadas();
+		chamadas = new ArrayList<Chamada>(a.getChamadas());
 	}
 	
 	@Override

@@ -1,11 +1,12 @@
 package mementos;
 
+import java.util.ArrayList;
 import java.util.List;
 
-import pojos.Aluno;
-import pojos.Aula;
-import pojos.Curso;
-import pojos.Turma;
+import models.Aluno;
+import models.Aula;
+import models.Curso;
+import models.Turma;
 
 public class TurmaMemento implements Memento {
 	
@@ -26,8 +27,8 @@ public class TurmaMemento implements Memento {
 		ano = t.getAno();
 		semestre = t.getSemestre();
 		curso = t.getCurso();
-		aulas = t.getAulas();
-		alunos = t.getAlunos();
+		aulas = new ArrayList<Aula>(t.getAulas());
+		alunos = new ArrayList<Aluno>(t.getAlunos());
 	}
 	
 	@Override

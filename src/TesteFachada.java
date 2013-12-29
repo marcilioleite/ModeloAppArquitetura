@@ -1,6 +1,6 @@
+import models.Curso;
+import models.Turma;
 import facade.Facade;
-import pojos.Curso;
-import pojos.Turma;
 
 public class TesteFachada {
 
@@ -27,5 +27,4 @@ public class TesteFachada {
 		System.out.println(t.getCurso().toString());
 			
 	}
-	
 }

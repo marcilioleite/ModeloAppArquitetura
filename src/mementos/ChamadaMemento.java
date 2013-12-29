@@ -1,12 +1,13 @@
 package mementos;
 
+import java.util.HashMap;
 import java.util.Map;
 
-import org.joda.time.LocalDate;
+import models.Aluno;
+import models.Aula;
+import models.Chamada;
 
-import pojos.Aluno;
-import pojos.Aula;
-import pojos.Chamada;
+import org.joda.time.LocalDate;
 
 public class ChamadaMemento implements Memento {
 
@@ -22,7 +23,7 @@ public class ChamadaMemento implements Memento {
 		setChamadaTarget(c);
 		aula = c.getAula();
 		data = c.getData();
-		comparecimentos = c.getComparecimentos();
+		comparecimentos = new HashMap<Aluno, Boolean>(c.getComparecimentos());
 	}
 	
 	@Override

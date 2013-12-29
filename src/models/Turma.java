@@ -1,4 +1,4 @@
-package pojos;
+package models;
 import java.util.List;
 
 
@@ -55,5 +55,10 @@ public class Turma {
 
 	public void setAlunos(List<Aluno> alunos) {
 		this.alunos = alunos;
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("%s (%d.%d)", curso.getNome(), ano, semestre);
 	}
 }

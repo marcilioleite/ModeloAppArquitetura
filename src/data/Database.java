@@ -19,20 +19,6 @@ public class Database {
 		}
 	}
 	
-	public void commit() {
-		database.commit();
-	}
-
-	public void rollBack() {
-		database.rollback();
-	}
-
-	public void close() {
-		if (this.database != null) {
-			this.database.close();
-		}
-	}
-
 	public ObjectContainer getDatabase() {
 		return this.database;
 	}

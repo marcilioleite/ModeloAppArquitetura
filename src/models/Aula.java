@@ -1,8 +1,10 @@
-package pojos;
+package models;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.joda.time.LocalTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 
 public class Aula {
 
@@ -60,4 +62,11 @@ public class Aula {
 		this.chamadas = chamadas;
 	}
 
+	@Override
+	public String toString() {
+		DateTimeFormatter f = DateTimeFormat.forPattern("HH:mm");
+		String horario = inicio.toString(f) + " até " + fim.toString(f);
+		return String.format("%s %s", turma.toString(), horario);
+	}
+	
 }
