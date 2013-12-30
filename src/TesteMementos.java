@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
 
-import mementos.TurmaMemento;
-import models.Aluno;
-import models.Aula;
-import models.Curso;
-import models.Turma;
-
 import org.joda.time.LocalDate;
 import org.joda.time.LocalTime;
+
+import br.tpmarc.arqsoft.mementos.TurmaMemento;
+import br.tpmarc.arqsoft.models.Aluno;
+import br.tpmarc.arqsoft.models.Aula;
+import br.tpmarc.arqsoft.models.Curso;
+import br.tpmarc.arqsoft.models.Turma;
 
 public class TesteMementos {
 

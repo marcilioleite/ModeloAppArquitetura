@@ -1,6 +1,6 @@
-import models.Curso;
-import models.Turma;
-import facade.Facade;
+import br.tpmarc.arqsoft.facade.Facade;
+import br.tpmarc.arqsoft.models.Curso;
+import br.tpmarc.arqsoft.models.Turma;
 
 public class TesteFachada {
 
